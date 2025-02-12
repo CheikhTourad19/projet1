@@ -1,0 +1,34 @@
+<center>
+    <table style="collapse: collapse;">
+
+        <tr>
+            <th style="border: black 1px solid">id</th>
+
+            <th style="border: black 1px solid">username</th>
+
+            <th style="border: black 1px solid">E-mail</th>
+
+            <th style="border: black 1px solid;width: 100px">Photo</th>
+
+            <th style="border: black 1px solid">Nombre de livre</th>
+
+
+        </tr>
+
+            <tr>
+                <td style="border: black 1px solid ; ">{{ author.id }}</td>
+
+                <td style="border: black 1px solid;text-transform: uppercase;">{{ author.username }}</td>
+
+                <td style="border: black 1px solid;text-transform: uppercase;">{{ author.email }}</td>
+
+
+                <td style="border: black 1px solid; width: 100px"><img src="{{author.picture}}"></td>
+
+
+                <td style="border: black 1px solid;text-transform: uppercase;">{{ author.nb_books }}</td>
+
+            </tr>
+
+    </table>
+</center>

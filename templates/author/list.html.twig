@@ -1,0 +1,23 @@
+<center>
+<table style="collapse: collapse;">
+    <tr>
+        <th colspan="5" style="border: black 1px solid">Nombre d'auteur : {{ authors|length }}</th>
+    </tr>
+    <tr>
+        <th style="border: black 1px solid">id</th>
+
+        <th style="border: black 1px solid">username</th>
+
+    </tr>
+    {% for author in authors %}
+    <tr>
+        <td style="border: black 1px solid ; ">{{ author.id }}</td>
+
+        <td style="border: black 1px solid;text-transform: uppercase;">{{ author.username }}</td>
+
+        <td> <a href="/author_id={{author.id}}">Details</a></td>
+
+    </tr>
+    {% endfor %}
+</table>
+</center>
